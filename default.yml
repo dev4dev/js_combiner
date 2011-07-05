@@ -1,0 +1,8 @@
+scripts:
+    -
+        file: jquery-1.6.2.min.js
+        min: false
+    -
+        file: jquery.address.js
+        min: true
+out: build.js
