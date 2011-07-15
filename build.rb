@@ -42,8 +42,14 @@ config['scripts'].each do |item|
 end
 
 ## write output
-File::open(config['out'], 'w') do |f|
+File::open((config['out'] % config['build']), 'w') do |f|
   f.write(out_buffer)
+end
+
+## inc build number
+config['build'] += 1
+File.open(yaml_config, 'w') do |f|
+  YAML::dump(config, f)
 end
 
 p 'Done!'

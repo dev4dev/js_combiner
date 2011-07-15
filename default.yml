@@ -5,4 +5,5 @@ scripts:
     -
         file: jquery.address.js
         min: true
-out: build.js
+out: work-%d.js
+build: 1

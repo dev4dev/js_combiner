@@ -1,4 +1,4 @@
 ## JS Combiner
 
 run
-	./build.rb <config>
+	./build.rb config.file
